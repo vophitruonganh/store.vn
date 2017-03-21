@@ -1,0 +1,27 @@
+<div class="col-lg-12">
+	<h3>{{ name }}</h3>
+	<ul>
+		<li>Tuoi : {{ age }}</li>
+		<li> Địa chỉ :
+			<ul>
+				<li>{{ address.province }}</li>
+				<li>{{ address.district }}</li>
+			</ul>
+		</li>
+		<li>Email : {{ email }}</li>
+		<li>Phone : {{ phone }}</li>
+		<li>Giơi Tính : {{ sex }}</li>
+	</ul>
+	<div class="col-lg-12">
+		<h3>Post</h3>
+		<hr>
+		<div *ngFor="let post of posts">
+			<ul>
+				<li><h5>{{ post.id }}</h5></li>
+				<li>{{ post.title }}</li>
+				<li><p>{{ post.body }}</p></li>
+			</ul>
+		</div>
+	</div>
+
+</div>
